@@ -1,0 +1,8 @@
+http:
+  host: "localhost"
+  port: "8086"
+  path: "/hlo"
+  
+db:
+  user: "venkat"
+  password: "[hRY28R7GMmu61gSpeZ4v9A==]"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="tasksecurepropertiesbychinnaclass-081223Flow" doc:id="cb7fc509-2c31-42ec-b083-8e82f05ba7c5" >
+		<http:listener doc:name="Listener" doc:id="9542c7f2-fabe-42af-ad0c-553c707d9973" config-ref="HTTP_Listener_config" path="${secure::http.path}"/>
+		<logger level="INFO" doc:name="Logger" doc:id="4cbae706-e54b-4a9d-a838-5cd952303e4b" message="DB password is: ${secure::db.password}"/>
+	</flow>
+</mule>
